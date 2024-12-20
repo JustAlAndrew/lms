@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookstyle.css">
+    <title>Books</title>
+</head>
+<body>
+
+    <header>
+        <div class="LOGO">
+            <span>UNIVERSITY OF EASTERN PHILIPPINES</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="member.html">Members</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="books.html" >Books</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <h1 style="text-align: center; padding: 20px;">Library Management System</h1>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="Search by title" style="padding: 10px; width: 200px;">
+        <button onclick="searchBooks()" style="padding: 10px;">Search</button>
+        <button onclick="resetSearch()" style="padding: 10px;">Reset</button>
+    </div>
+
+    <div class="container" id="bookContainer">
+        <!-- Books will be dynamically inserted here -->
+    </div>
+
+    <!-- Modal for Member Input -->
+    <div id="memberModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Enter Member Details</h2>
+            <form id="memberForm">
+                <label for="modalFirstName">First Name:</label>
+                <input type="text" id="modalFirstName" required>
+                <label for="modalLastName">Last Name:</label>
+                <input type="text" id="modalLastName" required>
+                <div class="modal-buttons">
+                    <button type="button" id="submitModalMember">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="bookscript.js"></script>
+</body>
+</html>

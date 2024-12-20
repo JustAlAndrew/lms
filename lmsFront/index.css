@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    background: url('library.jpg') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(3, 30, 95, 0.436);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+nav ul li a:hover::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.hero-section {
+    text-align: center;
+    margin-top: 225px;
+}
+
+.hero-section h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-section .line {
+    width: 500px; 
+    height: 2px; 
+    background-color: white; 
+    margin: 0 auto 30px auto;
+    border-radius: 2px; 
+}
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+ .create-btn {
+    padding: 8px 16px; /* Adjust padding for a normal button size */
+    border: none;
+    text-decoration: none;
+    font-size: 14px; /* Smaller, more standard font size */
+    font-weight: normal; /* Remove bold for a more typical appearance */
+    text-align: center;
+    border-radius: 4px;
+}
+
+.login-btn {
+    background-color: #ff9a03d2;
+    color: rgba(255, 255, 255, 0.635);
+}
+.login-btn:hover{
+    background-color: #1b00006f;
+
+} 
+
+.create-btn {
+    background-color: #7000ff;
+    color: white;
+    width: 250px;
+    font-size: 24px;
+}
+
+.create-btn:hover {
+    opacity: 0.9;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+

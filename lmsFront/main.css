@@ -1,0 +1,165 @@
+/* Global reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Body styling */
+body {
+    background: url('library.jpg') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(3, 30, 95, 0.436);
+}
+
+/* Logo container styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logo and text */
+    color: white;
+}
+
+/* UEP logo image styling */
+.uep-logo {
+    height: 60px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Shadow effect */
+}
+
+/* Text styling for university name */
+.logo-container span {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Optional: Letter spacing */
+}
+
+/* Hero section styling */
+.hero-section {
+    text-align: center;
+    margin-top: 115px;
+}
+
+.hero-section h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section h2 {
+    font-size: 50px;
+}
+
+.hero-section .line {
+    width: 800px; 
+    height: 2px; 
+    background-color: white; 
+    margin: 0 auto 30px auto;
+    border-radius: 2px; 
+}
+
+/* Buttons in hero section */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.login-btn, .create-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.login-btn {
+    background-color: #ff9a03d2;
+    color: rgba(255, 255, 255, 0.635);
+}
+
+.login-btn:hover {
+    background-color: #1b00006f;
+}
+
+.create-btn {
+    background-color: #7000ff;
+    color: white;
+}
+
+.create-btn:hover {
+    opacity: 0.9;
+}
+/* Styling for the explore button */
+.explore-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #dcb909; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 240px;
+}
+
+.explore-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+ body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+

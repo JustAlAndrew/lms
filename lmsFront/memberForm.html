@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memberForm.css">
+    <title>Create Member</title>
+</head>
+<body>
+    <header>
+        <div class="LOGO">
+            <span>UNIVERSITY OF EASTERN PHILIPPINES</span>
+        </div>
+        <nav>
+            <ul>
+               <li><a href="main.html">Home</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="books.html" >Books</a></li>
+            </ul>   
+        </nav>
+    </header>   
+
+    <div id="createMember" >
+        <form id="memberForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        
+            <label for="extensionName">Extension Name:</label>
+            <input type="text" id="extensionName" name="extensionName">
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber">
+        
+            <label for="memberType">Member Type:</label>
+            <select id="memberType" name="memberType" required>
+                <option value="student">Student</option>
+                <option value="staff">Staff</option>
+            </select>
+        
+            <div id="additionalFields"></div> <!-- Placeholder for dynamic fields -->
+        
+            <button type="button" id="nextButton">Next</button>
+            <button type="button" id="submitButton" style="display:none;">Submit</button>
+        </form>
+        
+        <div id="responseMessage"></div>
+        
+    </div>
+    
+    <script src="memberForm.css"></script>
+</body>
+</html>
