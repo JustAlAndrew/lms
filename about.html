@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Container Styling */
+        .about-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading Styling */
+        .about-container h1 {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Paragraph Styling */
+        .about-container p {
+            font-size: 1.2rem;
+            text-align: justify;
+            margin-bottom: 0;
+        }
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(3, 30, 95, 0.436);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+nav ul li a:hover::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="LOGO">
+            <span>UNIVERSITY OF EASTERN PHILIPPINES</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="member.html">Members</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="books.html" >Books</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+
+    <!-- Main Container -->
+    <div class="about-container">
+        <h1>About This System</h1>
+        <p>
+            This web-based library system was developed to modernize and enhance the library management experience at the 
+            University of Eastern Philippines. Inspired by the institution's commitment to academic excellence, this system 
+            addresses the limitations of the current library processes and introduces clear, user-friendly features designed 
+            for efficiency and accessibility. Designed to be implemented at the library counter, this system streamlines core 
+            operations such as catalog searches, digital borrowing and returning, real-time inventory updates, and user account 
+            management. By serving as a centralized tool for library staff and users, it aims to foster a more organized, effective, 
+            and technology-driven library environment for the University community.
+        </p>
+    </div>
+</body>
+
+</html>
